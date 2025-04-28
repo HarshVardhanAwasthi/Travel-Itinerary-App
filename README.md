@@ -1,12 +1,38 @@
-# React + Vite
+# Figma UI Implementation in React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project converts the provided Figma designs into a responsive and pixel-perfect React application. The focus is on creating a clean, maintainable codebase with reusable components and seamless user interaction.  
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+-  **Pixel-Perfect Figma to React UI**  
+  - Accurate implementation of all visual elements including typography, spacing, colors, and layouts.
+  - Responsive design to support multiple screen sizes.
 
-## Expanding the ESLint configuration
+-  **Reusable Component Structure**  
+  - UI is broken down into modular and reusable React components.
+  - Organized and maintainable code structure with clear prop usage.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-  **Interactive Elements**  
+  - Buttons, forms, and lists implemented as per Figma interaction guidelines.
+  - Smooth state management for user interaction flow.
+
+-  **Code Quality and Best Practices**  
+  - Clean, readable, and well-documented code.
+  - Adherence to React best practices and naming conventions.
+  - Proper error handling implemented.
+
+## User Flow
+- On the **Enter Destination** screen:
+  - Type "**Tokyo**" into the input field.
+  - Click the **Continue** button to navigate to the **Main Dashboard**.
+  
+- On the **Main Dashboard**:
+  - The name displayed in the dashboard corresponds to the city entered in the **Enter Destination** input box (e.g., "Tokyo").
+  
+- On the **Profile Edit Section**:
+  - Users can change their name in the profile edit section.
+  - When the name is changed, it dynamically updates at the top of the profile page as a demonstration of the change.
+  - **Note**: This change is for **demonstration purposes only** and does not affect the name displayed in the Main Dashboard.
+
+
