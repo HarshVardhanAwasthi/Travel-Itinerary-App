@@ -1,29 +1,22 @@
 import { MapPinIcon, CalendarDaysIcon } from "@heroicons/react/24/outline";
-import solo from "../../Resources/solo.png";
-import couple from "../../Resources/couple.png";
-import family from "../../Resources/family.png";
-import friends from "../../Resources/friends.png";
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { options } from "../utils/options";
 
 const JourneyDetails = () => {
 
-    const [destination, setDestination]=useState(null)
-    const [selected, setSelected] = useState(null);
 
-    const options = [
-      { name: "Solo", image: solo },
-      { name: "Couple", image: couple },
-      { name: "Family", image: family },
-      { name: "Friends", image: friends },
-    ];
   
+    const [destination, setDestination]=useState("")
+    const [selected, setSelected] = useState("");
+
     const handleSelect = (option) => {
       setSelected(option.name);
     };
 
   return (
-    <div className="flex flex-col items-center w-[400px] mx-auto p-2   rounded-lg shadow-2xl  bg-[linear-gradient(165deg,#f0fdf4,_#ffffff,#f3e8ff)] ">
+    <div className="flex flex-col items-center min-h-screen w-[400px] mx-auto p-2   rounded-lg shadow-2xl  bg-[linear-gradient(165deg,#f0fdf4,_#ffffff,#f3e8ff)] ">
       <div className="h-[54px]  gap-[2px] ">
         <div className="h-[32px]">
           <h2 className="font-[800] text-[24px] leading-[32px] tracking-[0] font-month">
@@ -47,6 +40,7 @@ const JourneyDetails = () => {
             className="w-full p-[10px] pl-[26px] border-[1px] h-[42.666664123535156px] placeholder-font-mont placeholder:text-[16px] placeholder:font-[400] placeholder:leading-[22px] placeholder:tracking-[0] placeholder:text-black border-gray-400 rounded-lg"
             placeholder="Enter Destination"
             value={destination}
+            required
             onChange={(e)=>setDestination(e.target.value)}
           ></input>
         </div>
@@ -61,9 +55,9 @@ const JourneyDetails = () => {
           <CalendarDaysIcon className="absolute top-5.5 left-1 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
           <select
             className="w-full  appearance-none p-[8px] pl-[28px] border-[1px] h-[42.666664123535156px] border-gray-400 rounded-lg"
-            name="duration"
+            name="duration" required
           >
-            <option value="" disabled selected>
+            <option value="" selected disabled>
               Select Duration
             </option>
             <option value="0">Less than 1 Week</option>
@@ -71,8 +65,8 @@ const JourneyDetails = () => {
             <option value="2">2 Week</option>
             <option value="3">More than 2 Weeks</option>
           </select>
-          <div class="absolute top-2.5 right-3 flex items-center pointer-events-none">
-            <span class="text-gray-500">▼</span>
+          <div className="absolute top-2.5 right-3 flex items-center pointer-events-none">
+            <span className="text-gray-500">▼</span>
           </div>
         </div>
       </div>
@@ -103,7 +97,7 @@ const JourneyDetails = () => {
       </div>
     </div>
       <div className="w-full bg-blue-600 flex  justify-center rounded-lg  h-[44px] mt-[110px] font-[600] text-white">
-        <Link to={`/${destination}`}>
+        <Link className="w-full" to={`/${destination}`}>
         <button className="w-full hover:cursor-pointer p-[10px]">
           Continue
         </button>

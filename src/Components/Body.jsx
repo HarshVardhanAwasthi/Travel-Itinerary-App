@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import JourneyDetails from "./journeyDetails"
+import JourneyDetails from "./JourneyDetails"
 import JourneyPlan from "./JourneyPlan"
+import { Profile } from "./Profile"
 
 const Body=()=>{
 
@@ -12,6 +13,10 @@ const Body=()=>{
         {
             path:"/:destination",
             element:<JourneyPlan/>
+        },
+        {
+            path:"/profile",
+            element:<Profile/>
         }
 
     ])
