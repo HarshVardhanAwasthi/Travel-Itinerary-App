@@ -1,8 +1,9 @@
 # Figma UI Implementation in React
 
 ## Overview
-This project converts the provided Figma designs into a responsive and pixel-perfect React application. The focus is on creating a clean, maintainable codebase with reusable components and seamless user interaction.  
+This project converts the provided Figma designs into a responsive and pixel-perfect React application. The focus is on creating a clean, maintainable codebase with reusable components and seamless user interaction.
 
+---
 
 ## Features
 -  **Pixel-Perfect Figma to React UI**  
@@ -22,6 +23,8 @@ This project converts the provided Figma designs into a responsive and pixel-per
   - Adherence to React best practices and naming conventions.
   - Proper error handling implemented.
 
+---
+
 ## User Flow
 - On the **Enter Destination** screen:
   - Type "**Tokyo**" into the input field.
@@ -35,4 +38,10 @@ This project converts the provided Figma designs into a responsive and pixel-per
   - When the name is changed, it dynamically updates at the top of the profile page as a demonstration of the change.
   - **Note**: This change is for **demonstration purposes only** and does not affect the name displayed in the Main Dashboard.
 
+---
 
+## Browser Compatibility
+
+To ensure cross-browser compatibility, this project uses **Browserslist**. It allows you to define which browsers the app should support. This ensures that features like JavaScript and CSS are transpiled or polyfilled for compatibility with older browsers. The configuration helps optimize the app's performance and ensures it works across various environments.
+
+---
