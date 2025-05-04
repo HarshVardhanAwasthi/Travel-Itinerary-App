@@ -31,7 +31,7 @@
     "tailwindcss": "^4.1.4",
     "vite": "^6.3.1"
   },
-  "browserlist": [
+  "browserslist": [
     "last 2 versions"
   ]
 }
