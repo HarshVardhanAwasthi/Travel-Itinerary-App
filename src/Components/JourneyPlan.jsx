@@ -6,7 +6,7 @@ import Accommodation from "./Accomodation";
 import TripDetails from "./TripDetails";
 import { LiaHikingSolid } from "react-icons/lia";
 import ActivitiesList from "./ActivitiesList";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 
 
